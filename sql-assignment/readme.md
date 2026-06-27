@@ -1,156 +1,77 @@
 
-
-\# Objective
-
+# Objective
 Analyze sales data using SQL with filtering, aggregation, and business queries.
 
+---
 
-
-\---
-
-
-
-\## Database Schema
-
-
+## Database Schema
 
 The database consists of the following four tables:
 
+* **customers** – Stores customer information.
+* **products** – Stores product details and inventory.
+* **orders** – Stores customer order information.
+* **order_items** – Stores details of products included in each order.
 
+### Entity Relationships
 
-\* \*\*customers\*\* – Stores customer information.
+* One customer can place multiple orders.
+* One order can contain multiple order items.
+* One product can appear in multiple order items.
 
-\* \*\*products\*\* – Stores product details and inventory.
+---
 
-\* \*\*orders\*\* – Stores customer order information.
-
-\* \*\*order\_items\*\* – Stores details of products included in each order.
-
-
-
-\### Entity Relationships
-
-
-
-\* One customer can place multiple orders.
-
-\* One order can contain multiple order items.
-
-\* One product can appear in multiple order items.
-
-
-
-\---
-
-
-
-\## Project Structure
-
-
+## Project Structure
 
 ```
-
 sql-assignment/
-
-│── Section\_A/
-
-│   └── basic\_queries.sql
-
-│── Section\_B/
-
-│   └── filtering\_queries.sql
-
-│── Section\_C/
-
-│   └── aggregation\_queries.sql
-
-│── Section\_D/
-
-│   └── joins\_queries.sql
-
-│── Section\_E/
-
-│   └── advanced\_queries.sql
-
+│── Section_A/
+│   └── basic_queries.sql
+│── Section_B/
+│   └── filtering_queries.sql
+│── Section_C/
+│   └── aggregation_queries.sql
+│── Section_D/
+│   └── joins_queries.sql
+│── Section_E/
+│   └── advanced_queries.sql
 │── README.md
-
 ```
 
+---
 
+## Assignment Sections
 
-\---
+### Section A – Basic Queries
 
+* Retrieve all records
+* Select specific columns
+* Use `DISTINCT`
 
+### Section B – Filtering
 
-\## Assignment Sections
+* `WHERE` clause
+* Comparison operators
+* Logical operators (`AND`, `OR`)
 
+### Section C – Aggregation
 
+* `COUNT()`
+* `SUM()`
+* `AVG()`
+* `MAX()`
+* `MIN()`
+* `GROUP BY`
 
-\### Section A – Basic Queries
+### Section D – Joins
 
+* `INNER JOIN`
+* `LEFT JOIN`
+* Multi-table joins
 
+### Section E – Advanced SQL
 
-\* Retrieve all records
+* `CASE` statements
+* Transactions (`COMMIT` and `ROLLBACK`)
 
-\* Select specific columns
-
-\* Use `DISTINCT`
-
-
-
-\### Section B – Filtering
-
-
-
-\* `WHERE` clause
-
-\* Comparison operators
-
-\* Logical operators (`AND`, `OR`)
-
-
-
-\### Section C – Aggregation
-
-
-
-\* `COUNT()`
-
-\* `SUM()`
-
-\* `AVG()`
-
-\* `MAX()`
-
-\* `MIN()`
-
-\* `GROUP BY`
-
-
-
-\### Section D – Joins
-
-
-
-\* `INNER JOIN`
-
-\* `LEFT JOIN`
-
-\* Multi-table joins
-
-
-
-\### Section E – Advanced SQL
-
-
-
-\* `CASE` statements
-
-\* Transactions (`COMMIT` and `ROLLBACK`)
-
-
-
-\---
-
-
-
+---
